@@ -1,6 +1,72 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #14121a;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #3c3f44;
+  box-shadow: 0 5px 15px rgba(0,0,0,.05);
+  flex: 1 1 calc(25% - 16.5px);
+  min-width: 280px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #3c3f44;
+  background-color: #26242b;
+  color: #fff;
+  transition: border-color .3s;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #3c3f44;
+  background-color: #26242b;
+  color: #fff;
+  transition: border-color .3s;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #4105a3;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
 }
